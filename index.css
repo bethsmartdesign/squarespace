@@ -1,0 +1,432 @@
+html {
+    background-color: black;
+}
+
+p.title a:link, a:visited, a:active {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+}
+
+#titletext {
+    width: 525px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    
+}
+
+/* ------------------------- MAIN NAVIGATION ------------------------- */
+
+a.link {
+    list-style-type: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#nav {
+    width: 186px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+       
+}
+
+li a.navigation:link, li a.navigation:visited, li a.navigation:active  {
+    display:block;
+    height: 40px;
+    padding-top: 20px;
+    width: 180px;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition:opacity 0.5s;
+    
+}
+
+    li a.navigation:hover {
+    color: #7FFFD4;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    font-weight: 399;
+    
+}
+
+  li a:hover {
+    color: #7FFFD4;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    font-weight: 380;
+}
+
+
+/* ------------------------- FOOTER ------------------------- */
+
+#footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    padding-bottom: 15px;
+}
+
+#instagram a {
+    display: block;
+    background: url(/squarespace/images/home.png);
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition:opacity 0.5s;
+    
+    
+}
+
+#instagram:hover a {
+    display: block;
+    background: url(/images//instagram_hover.svg);
+    opacity: 1;
+}
+
+/* ------------------------- SOCIAL MEDIA ICONS ------------------------- */
+
+#social li {
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    
+    
+}
+
+#social a {
+    display: block;
+}
+
+#instagram a {
+    background: url(images/instagram.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition:opacity 0.5s;
+    
+    
+}
+
+#instagram:hover a {
+    background: url(images/instagram_hover.svg);
+    opacity: 1;
+}
+
+#facebook a {
+    background: url(images/facebook.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition:opacity 0.5s;
+    
+    
+}
+
+#facebook:hover a {
+    background: url(images/facebook_hover.svg);
+    opacity: 1;
+}
+
+#twitter a {
+    background: url(images/twitter.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition:opacity 0.5s;
+    
+    
+}
+
+#twitter:hover a {
+    background: url(images/twitter_hover.svg);
+    opacity: 1;
+}
+
+#behance a {
+    
+    background: url(images/behance.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition:opacity 0.5s;
+}
+
+#behance:hover a {
+    background: url(images/behance_hover.svg);
+    opacity: 1;
+}
+
+#youtube a {
+    background: url(images/youtube.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition:opacity 0.5s;
+    
+    
+}
+
+#youtube:hover a {
+    background: url(images/youtube_hover.svg);
+    opacity: 1;
+}
+
+/* ------------------------- SLIDESHOW ------------------------- */
+
+.slideshow,
+.slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.slideshow:after {
+    content: '';
+    
+}
+.slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: images 18s linear infinite 0s;
+    -moz-animation: images 18s linear infinite 0s;
+    -o-animation: images 18s linear infinite 0s;
+    -ms-animation: images 18s linear infinite 0s;
+    animation: images 18s linear infinite 0s;
+}
+.slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    
+}
+.slideshow li:nth-child(1) span { 
+    background-image: url(images/finland.jpg); 
+     -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.slideshow li:nth-child(2) span {
+    background-image: url(images/lake.jpg);
+     -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.slideshow li:nth-child(3) span {
+    background-image: url(images/paris.jpg);
+     -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+/* ------------------------- SLIDESHOW ANIMATION ------------------------- */
+
+@keyframes images { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
+
+@-webkit-keyframes images { 
+	0% {
+	    opacity: 0;
+	    -webkit-animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.05);
+	    -webkit-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		-webkit-transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    -webkit-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
+
+@-moz-keyframes images { 
+	0% {
+	    opacity: 0;
+	    -moz-animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    -moz-transform: scale(1.05);
+	    -moz-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -moz-transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		-moz-transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    -moz-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
+
+@-os-keyframes images { 
+	0% {
+	    opacity: 0;
+	    -os-animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    -os-transform: scale(1.05);
+	    -os-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -os-transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		-os-transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    -os-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
+
+@-moz-keyframes images { 
+	0% {
+	    opacity: 0;
+	    -moz-animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    -moz-transform: scale(1.05);
+	    -moz-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -moz-transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		-moz-transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    -moz-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
+
+@-ms-keyframes images { 
+	0% {
+	    opacity: 0;
+	    -ms-animation-timing-function: ease-in;
+	}
+	25% {
+	    opacity: 1;
+	    -ms-transform: scale(1.05);
+	    -ms-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -ms-transform: scale(1.1);
+	} 
+	50% {
+		opacity: 0;
+		-ms-transform: scale(1.1);
+	}
+	60% {
+	    opacity: 0;
+	    -ms-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+    
+}
